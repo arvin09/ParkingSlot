@@ -10,8 +10,10 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 import angular from 'angular';
 
+import uirouter from '@uirouter/core';
+
 import '../style/app.css';
 
-let app =  angular.module('app', []);
+let app =  angular.module('app', [uirouter]);
 
 export default app;
