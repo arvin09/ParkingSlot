@@ -1,3 +1,3 @@
 # ParkingSlot
-Same Parking application
+Simple Parking application
 
