@@ -1,0 +1,44 @@
+/* styles in src/style directory are applied to the whole page */
+
+a {
+  color: #03A9F4;
+}
+
+main {
+  padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.parking-slot{
+  padding-top: 80px;
+}
+.parking-slot ul{
+  list-style: none;
+}
+
+.parked {
+  background:#03A9F4;
+  opacity: 0.8;
+}
+
+.parking-slot li{
+  display: inline;
+  padding: 40px;
+  margin-right: 10px;
+  border: 2px dotted red;
+  cursor: pointer;  
+}
