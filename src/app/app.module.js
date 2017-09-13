@@ -16,17 +16,22 @@ import '../style/app.css';
 
 let app =  angular.module('app', [uiRouter]);
 
-app.config(function($stateProvider, $urlServiceProvider) {
-    $urlServiceProvider.rules.otherwise({ state: 'about' });
+app.config( ($stateProvider, $urlServiceProvider) => {
+    $urlServiceProvider.rules.otherwise({ state: 'home' });
     
-    $stateProvider.state('about', {
-      url: '/about',
-      component: 'appAbout'
+    $stateProvider.state('home', {
+      url: '/home',
+      component: 'appParkingSections'
     });
       
-    $stateProvider.state('login', {
-      url: '/login',
-      component: 'appLogin'
+    $stateProvider.state('signin', {
+      url: '/signin',
+      component: 'appSignin'
+    });
+
+    $stateProvider.state('signup', {
+      url: '/signup',
+      component: 'appSignup'
     });
   
   });
