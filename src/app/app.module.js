@@ -36,4 +36,12 @@ app.config( ($stateProvider, $urlServiceProvider) => {
   
   });
 
+  app.value('apiEndPoint', 'https://gist.githubusercontent.com/arvin09/5168c9e5bf1636eed76d7c1efc2a9706/raw/65bb756341d329a80ed62c3badf2bf24febfefe2/parkingService.json');
+
+  app.run(['apiDataFactory', '$rootScope', (apiDataFactory, $rootScope) => {
+    apiDataFactory.fetchApiData().then((data)=> {
+      $rootScope.appData = data;
+    });
+  }]);
+
 export default app;
