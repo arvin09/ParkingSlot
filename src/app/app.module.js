@@ -36,12 +36,16 @@ app.config( ($stateProvider, $urlServiceProvider) => {
   
   });
 
-  app.value('apiEndPoint', 'https://gist.githubusercontent.com/arvin09/5168c9e5bf1636eed76d7c1efc2a9706/raw/65bb756341d329a80ed62c3badf2bf24febfefe2/parkingService.json');
+  app.value('apiEndPoints', {
+    getSections : 'https://gist.githubusercontent.com/arvin09/2d4ce5112d8086eec23461a548a19478/raw/f4f4c04ab802f3320f6b768c39fce7c73040b4f4/getSections.json',
+    getSlots: 'https://gist.githubusercontent.com/arvin09/4cc350e2526ca4a48e20c67eb16458d1/raw/dac470727d8f49bb884527487a71eacd36be5909/getSlots.json'
+  });
 
-  app.run(['apiDataFactory', '$rootScope', (apiDataFactory, $rootScope) => {
-    apiDataFactory.fetchApiData().then((data)=> {
-      $rootScope.appData = data;
-    });
-  }]);
+
+  // app.run(['apiDataFactory', (apiDataFactory) => {
+  //   apiDataFactory.getSelectedSlot(1).then((data)=> {
+  //     console.log(data);
+  //   });
+  // }]);
 
 export default app;

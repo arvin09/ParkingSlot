@@ -1,8 +1,4 @@
 /* styles in src/style directory are applied to the whole page */
-body{
-  
-}
-
 a {
   color: #03A9F4;
 }
@@ -21,11 +17,13 @@ main {
   text-align: center;
 }
 
-.parking-slot{
-  padding-top: 80px;
+.parking-areas{
+  padding-top: 20px;
 }
-.parking-slot ul{
+
+.parking-areas ul{
   list-style: none;
+  text-align: center;
 }
 
 .parked {
@@ -33,12 +31,19 @@ main {
   opacity: 0.8;
 }
 
-.parking-slot li{
-  display: inline;
-  padding: 40px;
-  margin-right: 10px;
-  border: 2px dotted red;
-  cursor: pointer;  
+.parking-areas li> div{
+  padding: 60px;
+  margin: 10px;
+  cursor: pointer;
+  background: rgb(255, 118, 0);
+  color: white;
+  font-weight: bold;
+  font-size: 20px; 
+}
+
+.parking-areas li :hover{
+  background: #03A9F4;
+  color: black;
 }
 
 .btn-signup {
@@ -46,7 +51,7 @@ main {
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 50px;
