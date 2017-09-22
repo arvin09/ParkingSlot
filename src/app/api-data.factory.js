@@ -30,8 +30,7 @@ appModule.factory('apiDataFactory', ['$http', 'apiEndPoints', '$q', ($http, apiE
             (response) => {
                 for(var i=0; i< response.data.sections.length; i++){
                     var section = response.data.sections[i];
-                    console.log("sections",section);
-                    if(section.sectionId === blockId){
+                    if(section.sectionId == blockId){
                         defer.resolve(section.map);
                         break;
                     }

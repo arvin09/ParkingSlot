@@ -1,0 +1,4 @@
+<div>Parking Slots: {{model.slotData.rows}}</div>
+<ul class="parking-slot" data-ng-repeat=" row in  model.times(model.slotData.rows) track by $index" data-ng-init="array= model.getSlots(model.slotArray)">
+    <li data-ng-repeat="col in array track by $index">{{array}}</li>
+</ul>

@@ -1,0 +1,8 @@
+<h2 class="col-sm-12 parking-info">Please select your parking block</h2>
+<div class="parking-areas col-sm-12">
+    <ul class="col-sm-12">
+        <li class="col-sm-4" data-ng-repeat="block in model.blockData.sections">
+            <div data-slot-id="block.id"><a href="#!/blocks/{{block.id}}">Block {{ ::block.name }}</a></div>
+        </li>
+    </ul>
+</div>
