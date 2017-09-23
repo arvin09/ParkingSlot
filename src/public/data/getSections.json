@@ -1,0 +1,33 @@
+{
+    "sections": [{
+            "id": 1,
+            "name": "A",
+            "capacity": 12
+        },
+        {
+            "id": 2,
+            "name": "B",
+            "capacity": 3
+        },
+        {
+            "id": 3,
+            "name": "C",
+            "capacity": 3
+        },
+        {
+            "id": 4,
+            "name": "D",
+            "capacity": 3
+        },
+        {
+            "id": 5,
+            "name": "E",
+            "capacity": 3
+        },
+        {
+            "id": 6,
+            "name": "F",
+            "capacity": 3
+        }
+    ]
+}

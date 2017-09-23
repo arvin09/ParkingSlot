@@ -1,0 +1,117 @@
+{
+    "sections": [
+        {
+            "sectionId": 1,
+            "map": {
+                "rows": 2,
+                "cols": 4,
+                "slots": [
+                    {
+                        "name": "A1",
+                        "parked": true
+                    },
+                    {
+                        "name": "A2",
+                        "parked": false
+                    },
+                    {
+                        "name": "A3",
+                        "parked": false
+                    },
+                    {
+                        "name": "A4",
+                        "parked": false
+                    },
+                    {
+                        "name": "A5",
+                        "parked": false
+                    },
+                    {
+                        "name": "A6",
+                        "parked": false
+                    }
+                ]
+            }
+        },
+        {
+            "sectionId": 2,
+            "map": {
+                "rows": 1,
+                "cols": 3,
+                "slots": [
+                    {
+                        "name": "B1",
+                        "parked": false
+                    },
+                    {
+                        "name": "B2",
+                        "parked": false
+                    },
+                    {
+                        "name": "B3",
+                        "parked": false
+                    }
+                    
+                ]
+            }
+        },
+        {
+            "sectionId": 3,
+            "map": {
+                "rows": 2,
+                "cols": 6,
+                "slots": [
+                    {
+                        "name": "C1",
+                        "parked": false
+                    },
+                    {
+                        "name": "C2",
+                        "parked": false
+                    },
+                    {
+                        "name": "C3",
+                        "parked": false
+                    },
+                    {
+                        "name": "C4",
+                        "parked": false
+                    },
+                    {
+                        "name": "C5",
+                        "parked": true
+                    },
+                    {
+                        "name": "C6",
+                        "parked": false
+                    },
+                    {
+                        "name": "C7",
+                        "parked": false
+                    },
+                    {
+                        "name": "C8",
+                        "parked": false 
+                    },
+                    {
+                        "name": "C9",
+                        "parked": false
+                    },
+                    {
+                        "name": "C10",
+                        "parked": true
+                    },
+                    {
+                        "name": "C11",
+                        "parked": false
+                    },
+                    {
+                        "name": "C12",
+                        "parked": false
+                    }
+                    
+                ]
+            }
+        }
+    ]
+}
