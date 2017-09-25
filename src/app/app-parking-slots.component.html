@@ -1,8 +1,9 @@
 <h3> Select the parking slot where you have parked</h3>
 <div class="parking-slots">
-<ul class=" col-sm-12" data-ng-repeat=" row in  model.times(model.slotData.rows) track by $index" data-ng-init="array= model.getSlots(model.slotArray)">
-    <li class="col-sm-2"  data-ng-repeat="col in array track by $index">
-        <div ng-class="{'disabled': array[$index].parked}">{{array[$index].name}}</div>
-    </li>
-</ul>
+    <ul class=" col-sm-12" data-ng-repeat=" row in  model.times(model.slotData.rows) track by $index" data-ng-init="array= model.getSlots(model.slotArray)">
+        <!-- <li class="col-sm-2" data-ng-click="model.toggleParking($event, array[$index].parked)" data-ng-repeat="col in array track by $index">
+            <div ng-class="{'disabled': array[$index].parked}">{{array[$index].name}}</div>
+        </li> -->
+        <app-solt data-ng-repeat="col in array track by $index" data-parked="array[$index].parked" data-name="array[$index].name"></app-solt>
+    </ul>
 </div>

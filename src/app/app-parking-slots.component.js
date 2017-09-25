@@ -1,10 +1,8 @@
 import appModule from './app.module';
 
-function slotsController($stateParams, apiDataFactory, $resolves){
+function slotsController($stateParams, apiDataFactory){
     var model = this;
     model.id = $stateParams.id;
-    //model.slotData = {};
-    //model.slotArray = []
 
     model.$onInit = ()=> {
         apiDataFactory.getSelectedSlot($stateParams.id).then((data)=> {
@@ -23,12 +21,10 @@ function slotsController($stateParams, apiDataFactory, $resolves){
             }
         });
     };
-    
 }
 
 appModule.component('appParkingSlots', {
-    bindings: { slotsData: '=' },
     template: require('./app-parking-slots.component.html'),
-    controller: ['$stateParams','apiDataFactory', '$resolves', slotsController],
+    controller: ['$stateParams','apiDataFactory', slotsController],
     controllerAs: 'model'
 });
