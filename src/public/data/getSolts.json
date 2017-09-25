@@ -29,6 +29,14 @@
                     {
                         "name": "A6",
                         "parked": false
+                    },
+                    {
+                        "name": "A7",
+                        "parked": false
+                    },
+                    {
+                        "name": "A8",
+                        "parked": false
                     }
                 ]
             }
@@ -36,8 +44,8 @@
         {
             "sectionId": 2,
             "map": {
-                "rows": 1,
-                "cols": 3,
+                "rows": 2,
+                "cols": 2,
                 "slots": [
                     {
                         "name": "B1",
@@ -49,6 +57,10 @@
                     },
                     {
                         "name": "B3",
+                        "parked": false
+                    },
+                    {
+                        "name": "B4",
                         "parked": false
                     }
                     
